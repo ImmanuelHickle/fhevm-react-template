@@ -3,12 +3,12 @@
 > A framework-agnostic, developer-friendly SDK for building confidential frontends with Zama's FHEVM (Fully Homomorphic Encryption Virtual Machine)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![GitHub](https://img.shields.io/badge/github-repository-blue.svg)](https://github.com/ErikaHegmann/fhevm-react-template)
+[![GitHub](https://img.shields.io/badge/github-repository-blue.svg)](https://github.com/ImmanuelHickle/fhevm-react-template)
 [![Framework](https://img.shields.io/badge/framework-agnostic-green.svg)]()
 [![FHEVM](https://img.shields.io/badge/FHEVM-Zama-purple.svg)](https://docs.zama.ai/fhevm)
 [![SDK](https://img.shields.io/badge/SDK-wagmi--like-orange.svg)]()
 
-**🎥 Demo Video: `demo.mp4` (Download to watch)** | **🌐 [Example Application](https://cultural-heritage-protection.vercel.app)** | **📂 [GitHub Repository](https://github.com/ErikaHegmann/fhevm-react-template)** | **📖 [Documentation](./docs/)**
+**🎥 Demo Video: `demo.mp4` (Download to watch)** | **🌐 [Example Application](https://cultural-heritage-protection.vercel.app)** | **📂 [GitHub Repository](https://github.com/ImmanuelHickle/fhevm-react-template)** | **📖 [Documentation](./docs/)**
 
 ---
 
@@ -183,7 +183,7 @@ npm install @fhevm/sdk ethers
 
 ```bash
 # Clone repository
-git clone https://github.com/ErikaHegmann/fhevm-react-template.git
+git clone https://github.com/ImmanuelHickle/fhevm-react-template.git
 cd fhevm-react-template
 
 # Install dependencies
@@ -329,7 +329,6 @@ A complete Next.js application showcasing full SDK integration:
 cd examples/nextjs-app
 npm install
 npm run dev
-# Open http://localhost:3000
 ```
 
 **Key Implementation**:
@@ -491,7 +490,6 @@ A standalone React app with Vite showcasing SDK integration without Next.js:
 cd examples/react-app
 npm install
 npm run dev
-# Open http://localhost:3001
 ```
 
 **Key Features**:
@@ -529,7 +527,6 @@ A Vue 3 application demonstrating composables integration:
 cd examples/vue-app
 npm install
 npm run dev
-# Open http://localhost:3002
 ```
 
 **Key Features**:
@@ -614,7 +611,6 @@ Pure JavaScript implementation without any frameworks:
 cd examples/vanilla-app
 npm install
 npm run dev
-# Open http://localhost:3003
 ```
 
 **Key Features**:
@@ -952,7 +948,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for gu
 
 ### How to Contribute
 
-1. Fork the repository: https://github.com/ErikaHegmann/fhevm-react-template
+1. Fork the repository: https://github.com/ImmanuelHickle/fhevm-react-template
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Commit changes: `git commit -m 'Add amazing feature'`
 4. Push to branch: `git push origin feature/amazing-feature`
@@ -968,7 +964,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## 🔗 Links
 
-- **GitHub Repository**: https://github.com/ErikaHegmann/fhevm-react-template
+- **GitHub Repository**: https://github.com/ImmanuelHickle/fhevm-react-template
 - **Example Application**: https://cultural-heritage-protection.vercel.app/
 - **Demo Video**: `demo.mp4` (Download from repository)
 - **Documentation**: [./docs](./docs/)
@@ -981,7 +977,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 For questions or issues:
 
-- **GitHub Issues**: [Create an issue](https://github.com/ErikaHegmann/fhevm-react-template/issues)
+- **GitHub Issues**: [Create an issue](https://github.com/ImmanuelHickle/fhevm-react-template/issues)
 - **Documentation**: [Browse docs](./docs/)
 - **Zama Discord**: [Join community](https://discord.gg/zama)
 
