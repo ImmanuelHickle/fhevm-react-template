@@ -1,5 +1,9 @@
-export * from "./useFhevm";
-export * from "./useFHEEncryption";
-export * from "./useFHEDecrypt";
-export * from "./useInMemoryStorage";
+/**
+ * React adapters for FHEVM SDK
+ */
 
+export * from './hooks/useFhevm';
+export * from './hooks/useEncrypt';
+export * from './hooks/useDecrypt';
+export * from './hooks/useContract';
+export * from './context/FhevmProvider';
