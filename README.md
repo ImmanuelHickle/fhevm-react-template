@@ -8,7 +8,7 @@
 [![FHEVM](https://img.shields.io/badge/FHEVM-Zama-purple.svg)](https://docs.zama.ai/fhevm)
 [![SDK](https://img.shields.io/badge/SDK-wagmi--like-orange.svg)]()
 
-**🎥 Demo Video: `demo.mp4` (Download to watch)** | **🌐 [Example Application](https://cultural-heritage-protection.vercel.app)** | **📂 [GitHub Repository](https://github.com/ImmanuelHickle/fhevm-react-template)** | **📖 [Documentation](./docs/)**
+**🎥 Demo Video: `demo.mp4` (Download to watch)** | **🌐 [Example Application](https://cultural-heritage-protection-fhe.vercel.app)** | **📂 [GitHub Repository](https://github.com/ImmanuelHickle/fhevm-react-template)** | **📖 [Documentation](./docs/)**
 
 ---
 
@@ -378,7 +378,7 @@ export default function VotingApp() {
 **Location**: `examples/cultural-heritage-protection/`
 **Type**: Smart Contract Example (Backend Only)
 **Status**: ⚠️ **CONTRACT ONLY - NO FRONTEND**
-**Live Demo**: https://cultural-heritage-protection.vercel.app/ (separate frontend deployment)
+**Live Demo**: https://cultural-heritage-protection-fhe.vercel.app/ (separate frontend deployment)
 
 A privacy-preserving cultural artifact management smart contract demonstrating:
 - ✅ **FHE smart contract implementation** with TFHE library
@@ -467,7 +467,7 @@ const decrypted = await userDecrypt(fhevm, {
 ```
 
 **Source**: `examples/cultural-heritage-protection/`
-**GitHub**: https://github.com/ErikaHegmann/CulturalHeritageProtection
+**GitHub**: https://github.com/ErikaHegmann/CulturalHeritageProtectionFHE
 **Documentation**: See `examples/cultural-heritage-protection/README.md` for detailed setup
 
 ---
@@ -965,7 +965,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## 🔗 Links
 
 - **GitHub Repository**: https://github.com/ImmanuelHickle/fhevm-react-template
-- **Example Application**: https://cultural-heritage-protection.vercel.app/
+- **Example Application**: https://cultural-heritage-protection-fhe.vercel.app/
 - **Demo Video**: `demo.mp4` (Download from repository)
 - **Documentation**: [./docs](./docs/)
 - **Zama FHEVM**: https://docs.zama.ai/fhevm
