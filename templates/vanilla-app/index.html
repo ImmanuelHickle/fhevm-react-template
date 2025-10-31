@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS FHEVM Example - Number Encryptor</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <header class="header">
+          <h1>🔐 Vanilla JS FHEVM</h1>
+          <p class="subtitle">Pure JavaScript encryption with Zama FHEVM SDK</p>
+        </header>
+
+        <!-- Status -->
+        <div id="status" class="status loading">
+          ⏳ Initializing FHEVM SDK...
+        </div>
+
+        <!-- Main content -->
+        <div id="content" class="content" style="display: none;">
+          <!-- Number input -->
+          <div class="input-section">
+            <label for="number-input">Enter a Number</label>
+            <input
+              type="number"
+              id="number-input"
+              placeholder="Enter a number to encrypt..."
+              min="0"
+              max="4294967295"
+            />
+          </div>
+
+          <!-- Type selector -->
+          <div class="input-section">
+            <label for="type-select">Encryption Type</label>
+            <select id="type-select">
+              <option value="euint8">euint8 (0-255)</option>
+              <option value="euint16">euint16 (0-65,535)</option>
+              <option value="euint32" selected>euint32 (0-4,294,967,295)</option>
+              <option value="euint64">euint64 (0-2^64-1)</option>
+            </select>
+          </div>
+
+          <!-- Buttons -->
+          <div class="button-group">
+            <button id="encrypt-btn" class="btn btn-primary">
+              🔒 Encrypt Number
+            </button>
+            <button id="clear-btn" class="btn btn-secondary">
+              🗑️ Clear Results
+            </button>
+          </div>
+
+          <!-- Results -->
+          <div id="results" class="results" style="display: none;">
+            <h3>Encryption Results</h3>
+            <div class="result-item">
+              <span class="result-label">Original Value:</span>
+              <span id="original-value" class="result-value"></span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Type:</span>
+              <span id="encryption-type" class="result-value"></span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Encrypted Size:</span>
+              <span id="encrypted-size" class="result-value"></span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">Encrypted (Hex):</span>
+              <code id="encrypted-hex" class="result-code"></code>
+            </div>
+          </div>
+        </div>
+
+        <!-- SDK Info -->
+        <footer class="info-section">
+          <h4>SDK Features Demonstrated:</h4>
+          <ul class="info-list">
+            <li>createFhevmInstance() - Initialize FHEVM</li>
+            <li>encrypt() - Client-side encryption</li>
+            <li>Pure JavaScript (no frameworks)</li>
+            <li>Multiple encryption types</li>
+            <li>Binary data handling</li>
+          </ul>
+          <span class="sdk-badge">@fhevm/sdk</span>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
