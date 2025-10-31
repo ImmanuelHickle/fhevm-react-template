@@ -632,6 +632,63 @@ displayEncryptedData(encrypted);
 
 ---
 
+### 7. Privacy Quality Inspection System 🔒
+
+**Location**: `examples/quality-testing-app/`
+**Type**: Complete Frontend Example
+**Status**: ✅ **FULLY IMPLEMENTED**
+
+A privacy-preserving quality inspection platform demonstrating real-world FHE use cases:
+- ✅ **React 18 + TypeScript + Vite**
+- ✅ **Full SDK integration** with @fhevm/sdk
+- ✅ **Anonymous quality testing** with encrypted data
+- ✅ **Role-based access control** (inspector authorization)
+- ✅ **Multi-category support** (Electronics, Automotive, Pharmaceutical, etc.)
+- ✅ **Privacy-preserving metrics** (quality scores, defect counts, batch numbers)
+- ✅ **Smart contract integration** with deployed FHE contract
+
+**Contract**: `0xB867082d753197aeAf0E3523FE993Eae79F45342` on Sepolia
+
+**Setup**:
+```bash
+cd examples/quality-testing-app
+npm install
+npm run dev
+```
+
+**Key Features**:
+```typescript
+import { useFhevm, useEncrypt } from '@fhevm/sdk/react';
+
+// Initialize SDK
+const { fhevm, isReady } = useFhevm({
+  network: 'sepolia',
+  contractAddress: CONTRACT_ADDRESS
+});
+
+const { encrypt, isEncrypting } = useEncrypt(fhevm);
+
+// Encrypt quality inspection data
+const encryptedScore = await encrypt(qualityScore, 'euint8');
+const encryptedDefects = await encrypt(defectCount, 'euint8');
+const encryptedBatch = await encrypt(batchNumber, 'euint32');
+
+// Submit to blockchain
+await contract.recordInspection(
+  encryptedScore,
+  encryptedDefects,
+  encryptedBatch
+);
+```
+
+**Real-World Use Cases**:
+- Manufacturing quality control with confidential defect tracking
+- Regulatory compliance with anonymous audit trails
+- Supply chain management with private quality scores
+- Anonymous inspector authorization and verification
+
+---
+
 ## 📚 API Reference
 
 ### Core Functions
@@ -836,11 +893,11 @@ fhevm-react-template/
 │
 ├── examples/
 │   ├── nextjs-app/             # ✅ Next.js (REQUIRED) - IMPLEMENTED
-│   ├── cultural-heritage-protection/  # ✅ Smart contract - IMPLEMENTED
 │   ├── react-app/              # ✅ React standalone - IMPLEMENTED
 │   ├── vue-app/                # ✅ Vue 3 - IMPLEMENTED
 │   ├── nodejs-app/             # ✅ Node.js CLI - IMPLEMENTED
-│   └── vanilla-app/            # ✅ Vanilla JS - IMPLEMENTED
+│   ├── vanilla-app/            # ✅ Vanilla JS - IMPLEMENTED
+│   └── quality-testing-app/    # ✅ Privacy Quality Inspection - IMPLEMENTED
 │
 ├── docs/
 │   ├── getting-started.md      # Setup guide
@@ -988,16 +1045,17 @@ For questions or issues:
 This SDK was created for the Zama FHEVM Bounty competition with:
 
 ✅ **Universal SDK Package** - Framework-agnostic core with React/Vue adapters
-✅ **Multiple Examples** - **6 complete working examples**:
+✅ **Multiple Examples** - **7 complete working examples**:
   1. ✅ **Next.js Confidential Voting** (REQUIRED) - Complete frontend with SDK
-  2. ✅ **Cultural Heritage Protection** - FHE smart contract example
-  3. ✅ **React Standalone App** - React + Vite with hooks
-  4. ✅ **Vue 3 Application** - Vue Composition API + composables
-  5. ✅ **Node.js CLI Tool** - Server-side encryption CLI
-  6. ✅ **Vanilla JavaScript** - Pure JS with no frameworks
-✅ **Frontend with SDK Integration** - 4 frontend examples (Next.js, React, Vue, Vanilla)
+  2. ✅ **React Standalone App** - React + Vite with hooks
+  3. ✅ **Vue 3 Application** - Vue Composition API + composables
+  4. ✅ **Node.js CLI Tool** - Server-side encryption CLI
+  5. ✅ **Vanilla JavaScript** - Pure JS with no frameworks
+  6. ✅ **Quality Inspection System** - Privacy-preserving quality testing with React
+  7. ✅ **Smart Contract Examples** - Deployed FHE contracts on Sepolia
+✅ **Frontend with SDK Integration** - 5 frontend examples (Next.js, React, Vue, Vanilla, Quality Testing)
 ✅ **Backend Example** - Node.js CLI tool for server-side operations
-✅ **Smart Contract Example** - Real-world FHE contract implementation
+✅ **Smart Contract Examples** - Multiple real-world FHE contract implementations
 ✅ **Comprehensive Documentation** - Setup guides, API reference, examples
 ✅ **Video Demo** - Complete walkthrough (demo.mp4)
 ✅ **< 10 Lines to Start** - Developer-friendly setup
